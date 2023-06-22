@@ -145,9 +145,9 @@ def parse_args() -> Args:
 
     parser.add_argument("mcu", help="mcu name", type=str)
     parser.add_argument("firmware", help="firmware path (.bin/.elf/.hex)", type=str)
-    parser.add_argument("-s", "--start", help="start write", type=str, required=False)
+    parser.add_argument("-s", "--start", help="start address", type=str, required=False)
     parser.add_argument("-t", "--tool", help="flash tool", type=str, required=False)
-    parser.add_argument("-d", "--dryrun", help="dryrun", type=bool, required=False)
+    parser.add_argument("-d", "--dryrun", help="dry run", type=bool, required=False)
 
     args = parser.parse_args()
 
